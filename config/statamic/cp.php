@@ -56,7 +56,7 @@ return [
     |
     */
 
-    'date_format' => 'Y-m-d',
+    'date_format' => 'd-m-Y',
 
     /*
     |--------------------------------------------------------------------------
@@ -102,7 +102,7 @@ return [
     |
     */
 
-    'theme' => env('STATAMIC_THEME', 'rad'),
+    'theme' => env('STATAMIC_THEME', ' business'),
 
     /*
     |--------------------------------------------------------------------------
@@ -115,7 +115,7 @@ return [
     |
     */
 
-    'custom_cms_name' => env('STATAMIC_CUSTOM_CMS_NAME', 'Statamic'),
+    'custom_cms_name' => env('STATAMIC_CUSTOM_CMS_NAME', 'The Betting Guys'),
 
     'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', null),
 

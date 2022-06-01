@@ -4,13 +4,19 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+        <link rel="manifest" href="/images/icons/site.webmanifest">
         <title>{{ title ?? site:name }}</title>
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
     </head>
     <body class="bg-gray-100 font-sans leading-normal text-gray-800">
-        <div class="mx-auto px-2 lg:min-h-screen flex flex-col items-center justify-center">
+        {{ partial:header}}
+        <div class="max-w-7xl mx-auto flex flex-col bg-green-200 px-4"
             {{ template_content }}
         </div>
+        {{ partial:footer}}
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
 </html>
