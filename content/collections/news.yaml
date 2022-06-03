@@ -1,0 +1,9 @@
+title: News
+template: news/show
+layout: layout
+revisions: false
+route: '/news/{month}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

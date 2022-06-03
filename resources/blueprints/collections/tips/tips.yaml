@@ -1,0 +1,100 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: bet_date
+        field:
+          mode: single
+          time_enabled: true
+          time_seconds_enabled: false
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: 'Bet Date'
+          type: date
+          icon: date
+          width: 33
+          listable: hidden
+          instructions_position: above
+          read_only: false
+      -
+        handle: bet
+        field:
+          input_type: text
+          antlers: false
+          display: Bet
+          type: text
+          icon: text
+          width: 66
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: tip
+        field:
+          collapse: false
+          sets:
+            tip:
+              display: Tip
+              fields:
+                -
+                  handle: team
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Team
+                    type: text
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                    validate:
+                      - required
+                -
+                  handle: option
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Option
+                    type: text
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                    validate:
+                      - required
+          display: Tip
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+title: 'Betting Tips'

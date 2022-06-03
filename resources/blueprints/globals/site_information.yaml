@@ -1,0 +1,82 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: copyright
+        field:
+          placeholder: 'The Betting Guys. All rights reserved.'
+          input_type: text
+          antlers: false
+          default: 'The Betting Guys. All rights reserved.'
+          display: Copyright
+          type: text
+          icon: text
+          instructions: 'Insert copyright text to appear in the footer'
+          listable: true
+          instructions_position: above
+          read_only: false
+      -
+        handle: footer_flair
+        field:
+          input_type: text
+          antlers: false
+          default: 'Made with <i class="icon ion-heart"></i> by Cloud IT Services.'
+          display: 'Footer Flair'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          read_only: false
+  social_media:
+    display: 'Social Media'
+    fields:
+      -
+        handle: social_media_accounts
+        field:
+          collapse: false
+          sets:
+            social_media_account:
+              display: 'Social Media Account'
+              fields:
+                -
+                  handle: icon
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: false
+                    max_files: 1
+                    display: Icon
+                    type: assets
+                    icon: assets
+                    instructions: 'Upload or select an SVG icon'
+                    width: 33
+                    listable: true
+                    instructions_position: above
+                    read_only: false
+                    folder: icons
+                -
+                  handle: social_media_url
+                  field:
+                    display: 'Social Media URL'
+                    type: link
+                    icon: link
+                    instructions: 'Paste the URL of your social media account'
+                    width: 66
+                    listable: true
+                    instructions_position: above
+                    read_only: false
+          display: 'Social Media Accounts'
+          type: replicator
+          icon: replicator
+          instructions: 'Add all your social media accounts here.'
+          listable: true
+          instructions_position: above
+          read_only: false
+  meta:
+    display: Meta
+    fields:
+      -
+        import: meta

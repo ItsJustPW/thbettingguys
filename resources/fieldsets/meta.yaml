@@ -1,0 +1,26 @@
+title: Meta
+fields:
+  -
+    handle: meta_title
+    field:
+      input_type: text
+      character_limit: 60
+      antlers: true
+      display: 'Meta Title'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false
+  -
+    handle: meta_description
+    field:
+      input_type: text
+      character_limit: 160
+      antlers: true
+      display: 'Meta Description'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      read_only: false

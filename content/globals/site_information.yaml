@@ -1,0 +1,27 @@
+title: 'Site Information'
+data:
+  copyright: 'The Betting Guys. All rights reserved.'
+  footer_flair: 'Built with ❤️  by Cloud IT Services.'
+  social_media_accounts:
+    -
+      icon: icons/facebook.svg
+      social_media_url: 'https://facebook.com'
+      type: social_media_account
+      enabled: true
+    -
+      icon: icons/github.svg
+      social_media_url: 'https://github.com'
+      type: social_media_account
+      enabled: true
+    -
+      icon: icons/tumblr.svg
+      social_media_url: 'https://tumblr.com'
+      type: social_media_account
+      enabled: true
+    -
+      icon: icons/twitter.svg
+      social_media_url: 'https://twitter.com'
+      type: social_media_account
+      enabled: true
+  meta_title: '{ title }'
+  meta_description: 'This is global description'

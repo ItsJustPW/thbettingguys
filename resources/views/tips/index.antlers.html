@@ -1,0 +1,13 @@
+<div class="relative flex items-center justify-center w-full h-32 mx-auto md:h-28 lg:h-48 -mt-6">
+    <img class="absolute inset-0 z-0 object-cover object-center w-full h-full rounded-b-3xl"
+        src="{{ glide:image width="1280" height="600" fit="crop_focal" format="webp" }}" alt="{{ title }}">
+    <div class="z-10 flex items-center justify-center w-full h-full bg-black bg-opacity-50 rounded-b-3xl">
+        <div class="mx-4 text-center text-white text-3xl font-semibold uppercase tracking-wider">
+            {{ title }}
+        </div>
+    </div>
+</div>
+
+<div class="mt-6">
+    {{ content }}
+</div>

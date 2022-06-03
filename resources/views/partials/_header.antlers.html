@@ -24,10 +24,11 @@
         <!-- Menu, if mobile set to hidden -->
         <div :class="isOpen ? 'show' : 'hidden'" class="md:flex items-center md:block mt-4 md:mt-0">
             <div class="flex flex-col md:flex-row md:ml-6">
-                <a class="my-1 text-sm text-gray-400 tracking-wider uppercase font-medium hover:text-gray-200 md:mx-4 md:my-0" href="#">Betting Tips</a>
-                <a class="my-1 text-sm text-gray-400 tracking-wider uppercase font-medium hover:text-gray-200 md:mx-4 md:my-0" href="#">Free Bets</a>
-                <a class="my-1 text-sm text-gray-400 tracking-wider uppercase font-medium hover:text-gray-200 md:mx-4 md:my-0" href="#">Banners</a>
-                <a class="my-1 text-sm text-gray-400 tracking-wider uppercase font-medium hover:text-gray-200 md:mx-4 md:my-0" href="#">News</a>
+                <ul>
+                    {{ nav:header }}
+                        <li><a class="my-1 text-sm text-gray-400 tracking-wider uppercase font-medium hover:text-gray-200 md:mx-4 md:my-0" href="{{ url }}">{{ title }}</a></li>
+                    {{ /nav:header }}
+                </ul>
             </div>
         </div>
     </div>

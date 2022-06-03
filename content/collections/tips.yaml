@@ -1,0 +1,10 @@
+title: 'Betting Tips'
+template: tips/show
+layout: layout
+revisions: false
+route: '/tips/{month}/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

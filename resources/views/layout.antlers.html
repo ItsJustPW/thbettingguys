@@ -8,16 +8,20 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
         <link rel="manifest" href="/images/icons/site.webmanifest">
-        <title>{{ title ?? site:name }}</title>
+        <title>{{ meta_title ?? site:name }}</title>
+        <meta name="description" content="{{ meta_description ?? site_information:meta_description }}">
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        {{ tracking_code_manager:head }}
     </head>
     <body class="bg-gray-100 font-sans leading-normal text-gray-800">
         {{ partial:header}}
-        <div class="max-w-7xl mx-auto flex flex-col bg-green-200 px-4"
+        <div class="max-w-7xl mx-auto flex flex-col px-4" >
             {{ template_content }}
         </div>
         {{ partial:footer}}
         <script src="{{ mix src='/js/site.js' }}"></script>
+        {{ tracking_code_manager:body }}
+        {{ tracking_code_manager:footer }}
     </body>
 </html>

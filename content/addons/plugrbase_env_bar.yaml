@@ -1,0 +1,12 @@
+envbar_local_enabled: true
+envbar_local_color: '#2FB048'
+envbar_local_message: 'Reminder: You''re running in a local environment.'
+envbar_development_enabled: false
+envbar_development_color: null
+envbar_development_message: null
+envbar_staging_enabled: false
+envbar_staging_color: null
+envbar_staging_message: null
+envbar_production_enabled: false
+envbar_production_color: null
+envbar_production_message: null
