@@ -9,6 +9,37 @@ sections:
           required: true
           validate:
             - required
+          width: 66
+      -
+        handle: featured_image
+        field:
+          mode: list
+          container: assets
+          restrict: true
+          allow_uploads: true
+          show_filename: true
+          display: 'Featured Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          width: 33
+          folder: tips
+          max_files: 1
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          antlers: false
+          default: 'Here is our value bet of the day for today, this bet offers the best chance of a long-term profit. We pick out the bet we feel has the best chance of long-term profit each day. As this is our football betting tips page we pick out the best football value bet for this page. The idea is this bet gives you a greater chance of winning than the odds reflect giving you the value.'
+          display: Content
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          read_only: false
       -
         handle: bet_date
         field:
@@ -22,7 +53,6 @@ sections:
           display: 'Bet Date'
           type: date
           icon: date
-          width: 33
           listable: hidden
           instructions_position: above
           read_only: false
@@ -34,12 +64,22 @@ sections:
           display: Bet
           type: text
           icon: text
-          width: 66
+          width: 50
           listable: hidden
           instructions_position: above
           read_only: false
           validate:
             - required
+      -
+        handle: bet_link
+        field:
+          display: 'Bet Link'
+          type: link
+          icon: link
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
       -
         handle: tip
         field:
@@ -82,6 +122,16 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+      -
+        handle: template
+        field:
+          hide_partials: true
+          display: Template
+          type: template
+          icon: template
+          listable: hidden
+          instructions_position: above
+          read_only: true
   sidebar:
     display: Sidebar
     fields:

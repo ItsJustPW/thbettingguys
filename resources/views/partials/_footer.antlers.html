@@ -5,7 +5,7 @@
             <div class="grid grid-cols-2 gap-8 xl:col-span-2">
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                        <h3 class="text-sm font-semibold text-gray-400 hover:text-gray-200 tracking-wider uppercase">Gambling Awareness</h3>
+                        <h3 class="text-sm font-semibold text-gray-400 transition hover:text-gray-200 tracking-wider uppercase">Gambling Awareness</h3>
                         <p class="mt-4 text-xs text-gray-300">We are committed to responsible gambling and have a number of ways to help you stay in control and keep gambling fun. You must be 18 years old or over to gamble on this site. Begambleaware.org. Please bet responsibly</p>
                     </div>
                     <div class="flex flex-col space-y-2">
@@ -17,7 +17,7 @@
                 </div>
                 <div class="md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                        <h3 class="text-sm font-semibold text-gray-400 hover:text-gray-200 tracking-wider uppercase">Banners</h3>
+                        <h3 class="text-sm font-semibold text-gray-400 transition hover:text-gray-200 tracking-wider uppercase">Links</h3>
                         <ul role="list" class="mt-4 space-y-4">
                             {{ nav:header }}
                             <li>
@@ -31,7 +31,7 @@
                     <ul role="list" class="mt-4 space-y-4">
                         {{ nav:footer }}
                         <li>
-                        <a href="{{ url }}" class="text-base text-gray-300 hover:text-gray-200"> {{ title }} </a>
+                        <a href="{{ url }}" class="text-base transition text-gray-300 hover:text-gray-200"> {{ title }} </a>
                         </li>
                         {{ /nav:footer }}
                     </ul>
@@ -53,7 +53,7 @@
         <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
             <div class="flex space-x-6 md:order-2">
                 {{ site_information:social_media_accounts }}
-                    <a href="{{ social_media_url }}" class="text-gray-400 hover:text-gray-300">
+                    <a href="{{ social_media_url }}" class="text-gray-400 transition hover:text-gray-300">
                         <img src="{{ icon }}" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" />
                     </a>
                 {{ /site_information:social_media_accounts }}

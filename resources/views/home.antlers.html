@@ -10,7 +10,7 @@
                 <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
                     <div class="lg:py-6">
                     <a href="#" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
-                        <span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-green-600 rounded-full">Betting Tips</span>
+                        <span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-green-600 rounded-full">Free Tips</span>
                         <span class="ml-4 text-sm">Join our newsletter</span>
                         <!-- Heroicon name: solid/chevron-right -->
                         <svg class="ml-2 w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -33,7 +33,7 @@
                             <button type="submit" class="block w-full py-3 px-4 rounded-md shadow bg-green-600 text-white font-medium hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 focus:ring-offset-gray-900">Subscribe</button>
                             </div>
                         </div>
-                        <p class="mt-3 pb-6 text-sm text-gray-300 sm:mt-4">By providing your email, you agree to our <a href="/terms" class="font-medium text-white">terms and conditions</a>. There is no charge for our newsletters.</p>
+                        <p class="mt-3 pb-6 text-sm text-gray-300 sm:mt-4">By providing your email, you agree to our <a href="/terms" class="font-medium text-white">terms and conditions</a>. There's no catch and we never charge for our newsletters.</p>
                         </form>
                     </div>
                     </div>
@@ -41,9 +41,9 @@
             </div>
       </div>
     </div>
-    <h1 class="text-3xl font-bold pb-2">{{title}}</h1>
+    <h1 class="text-3xl font-semibold pb-2 pt-8">{{title}}</h1>
     <hr class="border-b-4 border-b-green-600 ">
-    <div class="pt-2">
+    <div class="pt-8 text-justify">
         {{ content }}
     </div>
     <div>
@@ -52,32 +52,24 @@
 
 
         <!-- This is where the tips will be displayed    Notes: limit="3" as="posts" sort="date:desc"-->
-        <div class="grid grid-cols-1 gap-4 mt-3 mb-3 md:grid-cols-2 lg:grid-cols-3">
-            {{ collection:tips }}
+        <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
+            {{ collection:tips limit="6" paginate="true" as="posts" sort="date:desc"}}
                 {{ if no_results }}
-                    <p>Sorry, we don't have any tips for you at the minute. Check back soon.</p>
+                    <p>Aww, we've no tips! Please check back later.</p>
                 {{ /if }}
-                {{ tips }}
-                    {{ title }}
-                {{ /tips }}
-            {{# {{ posts }}
-            <a href="{{ url }}" class="block col-span-1 ">
-                <article class="">
-                    <div class="flex items-center">
-                        <div class="leading-tight">
-                            <p class="mb-2 font-bold text-nuna-end">{{ title }}</p>
-                            <div class="text-sm">{{ news_content | strip_tags |safe_truncate:150:...}}</div>
-                            <p class="text-sm font-bold text-gray-600 ">{{ date format="d F Y" }}</p>
+            {{ posts }}
+            <a href="{{ url }}" class="block col-span-1 transition bg-gray-100 shadow hover:shadow-md hover:bg-gray-100 hover:opacity-80">
+                <img src="{{ glide:featured_image width="1280" height="600" fit="crop_focal" format="webp"}}" alt="{{ featured_image:alt }}" class="rounded-r">
+                <article class="flex-col justify-between p-4 leading-tight h-3/6">
+                        <div>
+                            <p class="mb-4 font-semibold text-xl">{{ title }}</p>
                         </div>
-                    </div>
+                        <p class="pt-6 text-sm font-thin text-gray-600">{{ date format="d F Y" }}</p>
                 </article>
             </a>
-            {{ /posts }} #}}
+            {{ /posts }}
+            {{# {{ partial:components/paginate}} #}}
             {{ /collection:tips }}
         </div>
-
-
-
-
     </div>
   </main>

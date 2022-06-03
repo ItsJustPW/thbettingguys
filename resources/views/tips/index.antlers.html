@@ -8,6 +8,26 @@
     </div>
 </div>
 
-<div class="mt-6">
+<div class="my-6">
     {{ content }}
+</div>
+
+<div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
+    {{ collection:tips limit="6" paginate="true" as="posts" sort="date:desc"}}
+        {{ if no_results }}
+            <p>Aww, we've no tips! Please check back later.</p>
+        {{ /if }}
+    {{ posts }}
+    <a href="{{ url }}" class="block col-span-1 transition bg-gray-100 shadow hover:shadow-md hover:bg-gray-100 hover:opacity-80">
+        <img src="{{ glide:featured_image width="1280" height="600" fit="crop_focal" format="webp"}}" alt="{{ featured_image:alt }}" class="rounded-r">
+        <article class="flex-col justify-between p-4 leading-tight h-3/6">
+                <div>
+                    <p class="mb-4 font-semibold text-xl">{{ title }}</p>
+                </div>
+                <p class="pt-6 text-sm font-thin text-gray-600">{{ date format="d F Y" }}</p>
+        </article>
+    </a>
+    {{ /posts }}
+    {{# {{ partial:components/paginate}} #}}
+    {{ /collection:tips }}
 </div>
