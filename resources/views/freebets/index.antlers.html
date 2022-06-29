@@ -1,0 +1,48 @@
+<div class="relative flex items-center justify-center w-full h-32 mx-auto md:h-28 lg:h-48 -mt-6">
+    <img class="absolute inset-0 z-0 object-cover object-center w-full h-full rounded-b-3xl"
+        src="{{ glide:image width="1280" height="600" fit="crop_focal" format="webp" }}" alt="{{ title }}">
+    <div class="z-10 flex items-center justify-center w-full h-full bg-black bg-opacity-50 rounded-b-3xl">
+        <div class="mx-4 text-center text-white text-3xl font-semibold uppercase tracking-wider">
+            {{ title }}
+        </div>
+    </div>
+
+
+</div>
+
+<div class="my-6">
+    {{ content }}
+</div>
+
+
+
+{{ collection:freebets limit="6" paginate="true" as="posts" sort="date:desc"}}
+        {{ if no_results }}
+            <p>Aww, we've don't have any free tips at the moment, please check back later.</p>
+        {{ /if }}
+    {{ posts }}
+    <a href="{{promourl}}" class="mb-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-200 focus:rounded-3xl focus:ring-green-500">
+        <div class="grid overflow-hidden md:grid-cols-6 grid-cols-1 grid-rows-1 border border-gray-300 hover:bg-gray-200 transition rounded-3xl py-1 w-full h-full items-center ">
+            <div class="box row-span-1 item w-auto h-32 flex items-center  justify-center">
+                <img src="{{ glide:logo width="100" height="100" format="webp"}}" alt="{{ logo:alt }}" class="rounded-full">
+            </div>
+            <div class="box text-center flex items-center justify-center text-sm text-gray-600">
+                {{offername}}
+            </div>
+            <div class="box md:col-span-3 text-center items-center text-2xl font-bold flex flex-grow justify-center">
+                {{ promotext }}
+            </div>
+            <div class="box mx-3 flex items-center justify-center">
+                <button type="button" class="my-2 inline-flex items-center border font-semibold border-green-600 hover:bg-green-600 hover:text-white transition px-12 py-2 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-200 focus:rounded-lg focus:ring-green-500">
+                    Claim Here
+                </button>
+            </div>
+        </div>
+    </a>
+    <p class="text-xxs text-gray-500/80 mb-4 px-3">
+        {{smallprint}}
+    </p>
+    {{ /posts }}
+
+
+{{ /collection:freebets}}

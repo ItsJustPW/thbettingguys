@@ -1,0 +1,94 @@
+sections:
+  Offer:
+    display: Offer
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: promourl
+        field:
+          input_type: url
+          antlers: false
+          display: 'Promo URL'
+          type: text
+          icon: text
+          instructions: 'This is the URL the banner will send people who click on the banner.'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: logo
+        field:
+          mode: list
+          container: assets
+          folder: logos
+          restrict: true
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: promotext
+        field:
+          type: text
+          width: 50
+          validate:
+            - required
+          display: 'Promo Text'
+          instructions_position: above
+          listable: hidden
+          read_only: false
+          input_type: text
+          character_limit: 35
+          antlers: false
+      -
+        handle: offername
+        field:
+          input_type: text
+          character_limit: 35
+          antlers: false
+          display: 'Offer Name'
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+      -
+        handle: smallprint
+        field:
+          antlers: false
+          display: 'Small Print'
+          type: textarea
+          icon: textarea
+          instructions: 'This is the small print which appears below the promotional banner and is a legal requirement.'
+          listable: hidden
+          instructions_position: above
+          read_only: false
+          validate:
+            - required
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+title: 'Free Bets'

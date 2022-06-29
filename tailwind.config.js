@@ -12,6 +12,9 @@ module.exports = {
             tbgred: '#FF0000',
             tbgreddark: '#860000',
         },
+        fontSize: {
+            'xxs' : '0.60rem',
+        },
     },
   },
   plugins: [

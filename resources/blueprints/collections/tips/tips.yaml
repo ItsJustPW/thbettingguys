@@ -89,6 +89,30 @@ sections:
               display: Tip
               fields:
                 -
+                  handle: league
+                  field:
+                    options:
+                      'Premier League': 'Premier League'
+                      'EFL Championship ': 'EFL Championship'
+                      'League One ': 'League One'
+                      'League Two': 'League Two'
+                      'National League': 'National League'
+                    multiple: false
+                    max_items: 1
+                    clearable: true
+                    searchable: true
+                    taggable: true
+                    push_tags: false
+                    cast_booleans: false
+                    display: League
+                    type: select
+                    icon: select
+                    listable: hidden
+                    instructions_position: above
+                    read_only: false
+                    validate:
+                      - required
+                -
                   handle: team
                   field:
                     input_type: text

@@ -113,5 +113,43 @@ return [
             resource_path('views/vendor/mail'),
         ],
     ],
+    'api_key' => 'dd77579aec226e8a34a552ba940911ee-us5',
+    'add_new_users' => false,
+    'users' => [
+        'check_consent' => true,
+        'consent_field' => 'consent',
+        'disable_opt_in' => false,
+        'interests_field' => 'interests',
+        'marketing_permissions_field' => 'gdpr',
+        'marketing_permissions_field_ids' => [
+            [
+                'field_name' => null,
+                'id' => null,
+            ],
+        ],
+        'merge_fields' => [
+            [
+            ],
+        ],
+        'primary_email_field' => 'email',
+    ],
+    'forms' => [
+        [
+            'form' => 'newsletter',
+            'check_consent' => true,
+            'consent_field' => 'consent',
+            'disable_opt_in' => false,
+            'marketing_permissions_field' => 'gdpr',
+            'marketing_permissions_field_ids' => [
+                [
+                ],
+            ],
+            'merge_fields' => [
+                [
+                ],
+            ],
+            'primary_email_field' => 'email',
+        ],
+    ],
 
 ];

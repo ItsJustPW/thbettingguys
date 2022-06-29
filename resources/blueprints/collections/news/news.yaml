@@ -46,7 +46,7 @@ sections:
             - image
             - table
           container: assets
-          save_html: false
+          save_html: true
           toolbar_mode: fixed
           link_noopener: false
           link_noreferrer: false
@@ -56,7 +56,7 @@ sections:
           allow_source: false
           enable_input_rules: true
           enable_paste_rules: true
-          antlers: false
+          antlers: true
           display: Content
           type: bard
           icon: bard
@@ -89,6 +89,8 @@ sections:
           listable: hidden
           instructions_position: above
           read_only: false
+          validate:
+            - required
   meta:
     display: Meta
     fields:

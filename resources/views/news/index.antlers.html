@@ -1,1 +1,34 @@
-{{ title }}
+<div class="relative flex items-center justify-center w-full h-32 mx-auto md:h-28 lg:h-48 -mt-6">
+    <img class="absolute inset-0 z-0 object-cover object-center w-full h-full rounded-b-3xl"
+        src="{{ glide:image width="1280" height="600" fit="crop_focal" format="webp" }}" alt="{{ title }}">
+    <div class="z-10 flex items-center justify-center w-full h-full bg-black bg-opacity-50 rounded-b-3xl">
+        <div class="mx-4 text-center text-white text-3xl font-semibold uppercase tracking-wider">
+            {{ title }}
+        </div>
+    </div>
+</div>
+
+<div class="my-6">
+    {{ content }}
+</div>
+
+<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    {{ collection:news limit="6" paginate="true" as="posts" sort="date:desc"}}
+        {{ if no_results }}
+            <p>Aww, we've no news! Please check back later.</p>
+        {{ /if }}
+    {{ posts }}
+    <a href="{{ url }}" class="block col-span-1 transition bg-gray-100 shadow hover:shadow-md hover:bg-gray-100 hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-200 focus:rounded-lg focus:ring-green-500">
+        <img src="{{ glide:featured_image width="1280" height="600" fit="crop_focal" format="webp"}}" alt="{{ featured_image:alt }}" class="rounded-t-lg">
+        <article class="flex-col justify-between p-4 leading-tight ">
+                <div>
+                    <p class="flex justify-center mb-4 font-semibold text-xl capitalize">{{ title }}</p>
+                </div>
+                <div class="flex justify-center text-xs text-gray-500">{{date}}</div>
+
+        </article>
+    </a>
+    {{ /posts }}
+    {{# {{ partial:components/paginate}} #}}
+    {{ /collection:news }}
+</div>

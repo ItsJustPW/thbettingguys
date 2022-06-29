@@ -11,16 +11,21 @@
 </div>
 
 <div class="bg-dark text-white pl-4 py-3 font-bold rounded-t-md text-sm inline-flex pr-4">
-    {{ bet_date format="dS F" }} @ {{ bet_date format="H:i" }}
+    {{ if bet_date | is_today }}
+        Today @ {{ bet_date format="H:i" }}
+        <a class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-green-500 focus:rounded text-green-500 pl-4 hover:text-green-600 transition" href="{{ bet_link }}">{{ bet }}</a>
+    {{ else }}
+    {{ bet_date format="l jS F" }} @ {{ bet_date format="H:i" }}
     :
-    <a class=" text-green-500 pl-4 hover:text-green-600 transition" href="{{ bet_link }}">{{ bet }}</a>
+    <a class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-green-500 focus:rounded text-green-500 pl-4 hover:text-green-600 transition" href="{{ bet_link }}">{{ bet }}</a>
+    {{ /if }}
 </div>
 <div class="bg-black text-white py-3 pl-4 text-sm font-semibold inline-flex pr-4">
     <ul>
-        <li>
-            {{ tip }}
-            {{ team }} ( Unknown league ) <i class="font-light pl-6"> - {{ option }}</i><br>
-            {{ /tip }}
+        {{ tip }}
+        <li class="py-1">
+            {{ team }} <i class="font-light pl-3"> ({{ league }})</i> <i class="font-light pl-6"> - {{ option }}</i><br>
         </li>
+        {{ /tip }}
     </ul>
 </div>

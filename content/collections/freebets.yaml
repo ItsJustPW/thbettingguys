@@ -1,0 +1,9 @@
+title: 'Free Bets'
+template: freebets/index
+layout: layout
+revisions: false
+route: '/free/{month}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

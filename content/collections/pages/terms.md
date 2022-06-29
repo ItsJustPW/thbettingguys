@@ -4,7 +4,8 @@ blueprint: pages
 title: 'Terms and Conditions'
 template: default
 updated_by: 1ca43426-9fc8-43e7-a1a3-b2fc5d525f47
-updated_at: 1654252475
+updated_at: 1656524543
+image: page_images/terms.jpg
 content:
   -
     type: paragraph

@@ -1,6 +1,6 @@
 <footer class="bg-dark mt-6 border-t-4 border-t-green-600" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-4">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:pt-16 lg:px-4">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="grid grid-cols-2 gap-8 xl:col-span-2">
                 <div class="md:grid md:grid-cols-2 md:gap-8">
@@ -10,9 +10,9 @@
                     </div>
                     <div class="flex flex-col space-y-2">
                         <img class="h-8 w-8" src="/images/icons/18.png">
-                        <a href="https://www.gamcare.org.uk/"></a><img class="w-32 h-auto" src="/images/icons/gamcare.png"></a>
-                        <a href="https://www.begambleaware.org/"></a><img class="w-42 h-auto" src="/images/icons/be-gamble-aware.png"></a>
-                        <a href="https://www.whenthefunstops.co.uk/"><img class="w-42 h-auto pt-2" src="/images/icons/fun.png"></a>
+                        <a href="https://www.gamcare.org.uk/"></a><img class="w-32 h-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-green-500 focus:rounded" src="/images/icons/gamcare.png"></a>
+                        <a href="https://www.begambleaware.org/"></a><img class="w-42 h-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-green-500 focus:rounded" src="/images/icons/be-gamble-aware.png"></a>
+                        <a href="https://www.whenthefunstops.co.uk/"><img class="w-42 h-auto pt-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-200 focus:rounded-lg focus:ring-green-500" src="/images/icons/fun.png"></a>
                     </div>
                 </div>
                 <div class="md:grid md:grid-cols-2 md:gap-8">
@@ -21,7 +21,7 @@
                         <ul role="list" class="mt-4 space-y-4">
                             {{ nav:header }}
                             <li>
-                            <a href="{{ url }}" class="text-base text-gray-300 hover:text-gray-200"> {{ title }} </a>
+                            <a href="{{ url }}" class=" focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-green-500 focus:rounded text-base text-gray-300 hover:text-gray-200"> {{ title }} </a>
                             </li>
                             {{ /nav:header }}
                         </ul>
@@ -31,7 +31,7 @@
                     <ul role="list" class="mt-4 space-y-4">
                         {{ nav:footer }}
                         <li>
-                        <a href="{{ url }}" class="text-base transition text-gray-300 hover:text-gray-200"> {{ title }} </a>
+                        <a href="{{ url }}" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-green-500 focus:rounded text-base transition text-gray-300 hover:text-gray-200"> {{ title }} </a>
                         </li>
                         {{ /nav:footer }}
                     </ul>
@@ -53,12 +53,12 @@
         <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
             <div class="flex space-x-6 md:order-2">
                 {{ site_information:social_media_accounts }}
-                    <a href="{{ social_media_url }}" class="text-gray-400 transition hover:text-gray-300">
-                        <img src="{{ icon }}" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" />
+                    <a href="{{ social_media_url }}" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-green-500 focus:rounded text-gray-400 transition hover:text-gray-300">
+                        <img src="{{ icon }}" class="h-6 w-6 " fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" />
                     </a>
                 {{ /site_information:social_media_accounts }}
             </div>
-            <p class="mt-8 text-sm text-gray-400 md:mt-0 md:order-1">&copy; {{ now|format:Y }} {{ site_information:copyright }} {{ site_information:footer_flair }}</p>
+            <p class="mt-8 text-sm text-gray-400 md:mt-0 md:order-1">&copy; {{ now|format:Y }} {{ site_information:copyright }} <a href="https://ciits.co.uk" class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-dark focus:ring-green-500 focus:rounded">{{ site_information:footer_flair }}</a></p>
         </div>
     </div>
 </footer>
