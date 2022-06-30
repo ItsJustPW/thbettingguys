@@ -4,7 +4,7 @@
             height="600"
             fit="crop_focal"
             format="webp" }})"
-         class="pt-6 -m-6 bg-dark sm:pt-16 lg:pt-8 lg:pb-10 lg:overflow-hidden rounded-b-3xl mb-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-green-500">
+         class="pt-6  bg-dark sm:pt-16 lg:pt-8 lg:pb-10 lg:overflow-hidden rounded-b-3xl mb-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-green-500">
         <div class="mx-auto max-w-7xl lg:px-8">
             <div class="lg:grid lg:grid-cols-2 lg:gap-8">
                 <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
@@ -55,7 +55,7 @@
         <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
             {{ collection:tips limit="6" paginate="true" as="posts" sort="date:desc"}}
                 {{ if no_results }}
-                    <p>Aww, we've no tips! Please check back later.</p>
+                    <p>Aww, there's nothing to see at the minute. Please check back later.</p>
                 {{ /if }}
             {{ posts }}
             <a href="{{ url }}" class="block col-span-1 transition bg-gray-100 shadow hover:shadow-md hover:bg-gray-100 hover:opacity-80">

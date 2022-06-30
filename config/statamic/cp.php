@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'link_to_docs' => env('STATAMIC_LINK_TO_DOCS', true),
+    'link_to_docs' => env('STATAMIC_LINK_TO_DOCS', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -90,7 +90,7 @@ return [
     |
     */
 
-    'support_url' => env('STATAMIC_SUPPORT_URL', 'https://statamic.com/support'),
+    'support_url' => env('STATAMIC_SUPPORT_URL', 'https://ciits.co.uk'),
 
     /*
     |--------------------------------------------------------------------------
@@ -117,9 +117,9 @@ return [
 
     'custom_cms_name' => env('STATAMIC_CUSTOM_CMS_NAME', 'The Betting Guys'),
 
-    'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', null),
+    'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', '/images/tbg-logo-sm.png'),
 
-    'custom_favicon_url' => env('STATAMIC_CUSTOM_FAVICON_URL', null),
+    'custom_favicon_url' => env('STATAMIC_CUSTOM_FAVICON_URL', '/images/icons/favicon.ico'),
 
     'custom_css_url' => env('STATAMIC_CUSTOM_CSS_URL', null),
 

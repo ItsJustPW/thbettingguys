@@ -2,10 +2,10 @@
 id: 31aceee4-08d5-4ff2-9d57-1d2ef9a905c8
 blueprint: pages
 title: 'Free Bets'
-image: page_images/newsgraphic.jpg
+image: page_images/free.jpg
 template: freebets/index
 updated_by: 1ca43426-9fc8-43e7-a1a3-b2fc5d525f47
-updated_at: 1656542204
+updated_at: 1656609849
 content:
   -
     type: paragraph
