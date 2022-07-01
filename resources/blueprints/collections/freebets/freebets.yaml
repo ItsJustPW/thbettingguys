@@ -91,4 +91,9 @@ sections:
         field:
           type: slug
           localizable: true
+  meta:
+    display: Meta
+    fields:
+      -
+        import: meta
 title: 'Free Bets'

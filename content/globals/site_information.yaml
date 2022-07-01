@@ -9,18 +9,23 @@ data:
       type: social_media_account
       enabled: true
     -
-      icon: icons/github.svg
-      social_media_url: 'https://github.com'
-      type: social_media_account
-      enabled: true
-    -
-      icon: icons/tumblr.svg
-      social_media_url: 'https://tumblr.com'
-      type: social_media_account
-      enabled: true
-    -
       icon: icons/twitter.svg
       social_media_url: 'https://twitter.com'
+      type: social_media_account
+      enabled: true
+    -
+      icon: icons/instagram.svg
+      social_media_url: '#'
+      type: social_media_account
+      enabled: true
+    -
+      icon: icons/twitch.svg
+      social_media_url: '#'
+      type: social_media_account
+      enabled: true
+    -
+      icon: icons/snapchat.svg
+      social_media_url: '#'
       type: social_media_account
       enabled: true
   meta_title: '{ title }'

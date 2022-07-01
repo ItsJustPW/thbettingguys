@@ -22,20 +22,35 @@
                         <span class="block text-green-600">join for free</span>
                     </h1>
                     <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg">Join our newsletter to stay up to date with the latest betting tips and sports predictions before they're posted on our website. Best of all, it's completley free!</p>
-                    <div class="mt-10 sm:mt-12">
-                        <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
-                        <div class="sm:flex">
-                            <div class="min-w-0 flex-1">
-                            <label for="email" class="sr-only">Email address</label>
-                            <input id="email" type="email" placeholder="Enter your email" class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 focus:ring-offset-gray-900">
-                            </div>
-                            <div class="mt-3 sm:mt-0 sm:ml-3">
-                            <button type="submit" class="block w-full py-3 px-4 rounded-md shadow bg-green-600 text-white font-medium hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 focus:ring-offset-gray-900">Subscribe</button>
-                            </div>
-                        </div>
-                        <p class="mt-3 pb-6 text-sm text-gray-300 sm:mt-4">By providing your email, you agree to our <a href="/terms" class="font-medium text-white">terms and conditions</a>. There's no catch and we never charge for our newsletters.</p>
-                        </form>
+                    {{ form:newsletter }}
+                    <div>
+                        {{ if success }}
+                            <p class="text-green-400 mt-2">Thank you, please check your email as you need to confirm your request before we can add you to our list.</p>
+                        {{ /if }}
+                        {{ if errors }}
+                            <p class="text-red-400 text-sm mt-2">Please correct the following before we can submit your form: </p>
+                            <ul class="text-red-400 text-sm">
+                                <li>
+                                    - {{ errors | list }}
+                                </li>
+                            </ul>
+                        {{ /if }}
                     </div>
+                    <div class="mt-10 sm:mt-12">
+                        <div action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
+                            <div class="sm:flex">
+                                <div class="min-w-0 flex-1">
+                                <label for="email" class="sr-only">Email address</label>
+                                <input id="email" type="email" name="email" placeholder="Enter your email" class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 focus:ring-offset-gray-900">
+                                </div>
+                                <div class="mt-3 sm:mt-0 sm:ml-3">
+                                <button type="submit" class="block w-full py-3 px-4 rounded-md shadow bg-green-600 text-white font-medium hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 focus:ring-offset-gray-900">Subscribe</button>
+                                </div>
+                            </div>
+                        <p class="mt-3 pb-6 text-sm text-gray-300 sm:mt-4">By providing your email, you agree to our <a href="/terms" class="font-medium text-white">terms and conditions</a>. There's no catch and we never charge for our newsletters.</p>
+                        </div>
+                    </div>
+                    {{ /form:newsletter }}
                     </div>
                 </div>
             </div>
@@ -53,7 +68,7 @@
 
         <!-- This is where the tips will be displayed    Notes: limit="3" as="posts" sort="date:desc"-->
         <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
-            {{ collection:tips limit="6" paginate="true" as="posts" sort="date:desc"}}
+            {{ collection from="tips|news" limit="6" paginate="true" as="posts" sort="date:desc"}}
                 {{ if no_results }}
                     <p>Aww, there's nothing to see at the minute. Please check back later.</p>
                 {{ /if }}
@@ -69,7 +84,7 @@
             </a>
             {{ /posts }}
             {{# {{ partial:components/paginate}} #}}
-            {{ /collection:tips }}
+            {{ /collection }}
         </div>
     </div>
   </main>

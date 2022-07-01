@@ -34,18 +34,10 @@ return [
     'forms' => [
         [
             'form' => 'newsletter',
-            'check_consent' => true,
-            'consent_field' => 'consent',
+            'check_consent' => false,
             'disable_opt_in' => true,
-            'marketing_permissions_field_ids' => [
-                [
-                ],
-            ],
-            'merge_fields' => [
-                [
-                ],
-            ],
             'primary_email_field' => 'email',
+            'audience_id' => '3516ed133d',
         ],
     ],
 ];

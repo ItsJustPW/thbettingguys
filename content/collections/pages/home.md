@@ -4,7 +4,7 @@ blueprint: pages
 title: 'Welcome to The Betting Guys'
 template: home
 updated_by: 1ca43426-9fc8-43e7-a1a3-b2fc5d525f47
-updated_at: 1654264280
+updated_at: 1656697565
 meta_title: 'The Betting Guys'
 meta_description: 'Welcome to the betting guys. The hope of professional, free sports tips, offers and predictions.'
 content:

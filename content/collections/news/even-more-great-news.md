@@ -1,0 +1,11 @@
+---
+id: 3f7e057f-7e6d-44cc-8e60-3239031c8f77
+blueprint: news
+title: 'Even more great news'
+featured_image: news/football1.jpg
+updated_by: 1ca43426-9fc8-43e7-a1a3-b2fc5d525f47
+updated_at: 1656698022
+meta_title: 'Even more great news'
+meta_description: 'This is a description of the news article'
+---
+<p>The tree missed the days the kids used to come by and play. It still wore the tire swing the kids had put up in its branches years ago although both the tire and the rope had seen better days. The tree had watched all the kids in the neighborhood grow up and leave, and it wondered if there would ever be a time when another child played and laughed again under its branches. That was the hope that the tree wished every day as the swing gently swung empty in the wind.</p><p>Greg understood that this situation would make Michael terribly uncomfortable. Michael simply had no idea what was about to come and even though Greg could prevent it from happening, he opted to let it happen. It was quite ironic, really. It was something Greg had said he would never wish upon anyone a million times, yet here he was knowingly letting it happen to one of his best friends. He rationalized that it would ultimately make Michael a better person and that no matter how uncomfortable, everyone should experience racism at least once in their lifetime.</p><p>The song came from the bathroom belting over the sound of the shower&#039;s running water. It was the same way each day began since he could remember. It listened intently and concluded that the singing today was as terrible as it had ever been.</p><p>The robot clicked disapprovingly, gurgled briefly inside its cubical interior and extruded a pony glass of brownish liquid. &quot;Sir, you will undoubtedly end up in a drunkard&#039;s grave, dead of hepatic cirrhosis,&quot; it informed me virtuously as it returned my ID card. I glared as I pushed the glass across the table.</p><p>The computer wouldn&#039;t start. She banged on the side and tried again. Nothing. She lifted it up and dropped it to the table. Still nothing. She banged her closed fist against the top. It was at this moment she saw the irony of trying to fix the machine with violence.</p>
