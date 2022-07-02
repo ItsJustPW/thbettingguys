@@ -5,7 +5,7 @@ data:
   social_media_accounts:
     -
       icon: icons/facebook.svg
-      social_media_url: 'https://facebook.com'
+      social_media_url: 'https://www.facebook.com/TheBettingGuys'
       type: social_media_account
       enabled: true
     -
