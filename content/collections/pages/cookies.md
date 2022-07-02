@@ -4,7 +4,7 @@ blueprint: pages
 title: 'Cookie Policy'
 template: default
 updated_by: 14e10cc6-f2a4-43c9-ad53-d2d7d5986415
-updated_at: 1656800660
+updated_at: 1656802668
 image: page_images/cookie.jpg
 content:
   -
