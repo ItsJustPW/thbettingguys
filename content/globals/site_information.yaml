@@ -10,17 +10,17 @@ data:
       enabled: true
     -
       icon: icons/twitter.svg
-      social_media_url: 'https://twitter.com'
+      social_media_url: 'https://twitter.com/TheBettingGuys'
       type: social_media_account
       enabled: true
     -
       icon: icons/instagram.svg
-      social_media_url: '#'
+      social_media_url: 'https://www.instagram.com/thebettingguys/'
       type: social_media_account
       enabled: true
     -
       icon: icons/twitch.svg
-      social_media_url: '#'
+      social_media_url: 'https://www.twitch.tv/thebettingguys'
       type: social_media_account
       enabled: true
     -
