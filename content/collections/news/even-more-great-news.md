@@ -1,5 +1,6 @@
 ---
 id: 3f7e057f-7e6d-44cc-8e60-3239031c8f77
+published: false
 blueprint: news
 title: 'Even more great news'
 featured_image: news/football1.jpg
