@@ -1,5 +1,6 @@
 ---
 id: 569b8269-d90c-486a-9e27-d3b88a2fc350
+published: false
 blueprint: news
 title: 'This is big news'
 featured_image: news/football.jpg
