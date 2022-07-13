@@ -1,0 +1,11 @@
+---
+id: de75e3eb-36b7-4534-9640-158f56d0a0e9
+blueprint: news
+title: 'Join our Fantasy Football League 22/23'
+featured_image: news/fantasy-football-2223-(1).png
+meta_title: 'Join our Fantasy Football League 22/23 league'
+meta_description: 'Fantasy Football League for the 22/23 season. Join now to win some cool prizes.'
+updated_by: 14e10cc6-f2a4-43c9-ad53-d2d7d5986415
+updated_at: 1657716784
+---
+<h2>Join our Fantasy Football league for the 22/23 season for FREE.</h2><h3>Win lots of cool prizes which include, cash and vouchers, and more.</h3><p>A new season of <strong>Fantasy Premier League</strong> is here and after assembling your squad ready for the upcoming campaign you&#039;ll undoubtedly want to look at joining our league and cup competitions.</p><p></p><p>For more details please subscribe to our mailing list on our website which you can find at the bottom of the page or on our home page. <img src="statamic://asset::assets::fantasy-football-2223-(1).png" alt=""></p>
