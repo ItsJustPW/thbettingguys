@@ -23,7 +23,6 @@ sections:
           icon: assets
           listable: hidden
           instructions_position: above
-          read_only: false
           width: 33
           folder: tips
           max_files: 1
@@ -38,7 +37,6 @@ sections:
           icon: textarea
           listable: hidden
           instructions_position: above
-          read_only: false
       -
         handle: bet_date
         field:
@@ -54,7 +52,6 @@ sections:
           icon: date
           listable: hidden
           instructions_position: above
-          read_only: false
       -
         handle: bet
         field:
@@ -66,7 +63,6 @@ sections:
           width: 50
           listable: hidden
           instructions_position: above
-          read_only: false
           validate:
             - required
       -
@@ -78,7 +74,6 @@ sections:
           width: 50
           listable: hidden
           instructions_position: above
-          read_only: false
       -
         handle: tip
         field:
@@ -144,7 +139,6 @@ sections:
           icon: replicator
           listable: hidden
           instructions_position: above
-          read_only: false
   sidebar:
     display: Sidebar
     fields:
@@ -160,4 +154,9 @@ sections:
           required: true
           validate:
             - required
+  meta:
+    display: META
+    fields:
+      -
+        import: meta
 title: 'Betting Tips'
