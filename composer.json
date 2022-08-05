@@ -18,7 +18,7 @@
         "plugrbase/statamic-environment-bar": "^1.0",
         "silentz/mailchimp": "^2.9",
         "simonridley/tracking-code-manager": "dev-master",
-        "statamic/cms": "3.3.17"
+        "statamic/cms": "3.3.25"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
