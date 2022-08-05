@@ -8,3 +8,9 @@ preferences:
       columns:
         - datestamp
         - email
+  collections:
+    news:
+      columns:
+        - title
+        - slug
+        - date
