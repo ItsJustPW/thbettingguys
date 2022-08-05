@@ -3,16 +3,17 @@ id: 8425caea-4158-44c1-8e2d-32e46e9e9ae8
 blueprint: pages
 title: 'Cookie Policy'
 template: default
-updated_by: 14e10cc6-f2a4-43c9-ad53-d2d7d5986415
-updated_at: 1656802668
+updated_by: 1ca43426-9fc8-43e7-a1a3-b2fc5d525f47
+updated_at: 1659712519
 image: page_images/cookie.jpg
+published: true
 content:
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'This website uses cookies. We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners.'
+        text: 'This website uses cookies. We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners. '
   -
     type: paragraph
     content:

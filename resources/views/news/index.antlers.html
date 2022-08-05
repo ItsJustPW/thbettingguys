@@ -15,7 +15,7 @@
 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
     {{ collection:news limit="6" paginate="true" as="posts" sort="date:desc"}}
         {{ if no_results }}
-            <p>Aww, we've no news! Please check back later.</p>
+            <p class="prose">Aww, we've no news! Please check back later.</p>
         {{ /if }}
     {{ posts }}
     <a href="{{ url }}" class="block col-span-1 transition bg-gray-100 shadow hover:shadow-md hover:bg-gray-100 hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-200 focus:rounded-lg focus:ring-green-500">

@@ -8,8 +8,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
         <link rel="manifest" href="/images/icons/site.webmanifest">
-        <title>{{ meta_title ?? site:name }}</title>
-        <meta name="description" content="{{ meta_description ?? site_information:meta_description }}">
+        <title>{{ site:name }}</title>
+        <meta name="description" content="{{ site_information:meta_description }}">
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
         {{ tracking_code_manager:head }}
